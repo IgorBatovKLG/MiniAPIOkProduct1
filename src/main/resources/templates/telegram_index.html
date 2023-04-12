@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+</head>
+
+<body>
+<div id="mainWrapper" class="wrapper ">
+    <div id="main">
+        <div class="container">
+            <form action="http://localhost:1997/telegram_index" method="get">
+                <div class="container" style="margin: 10px">
+                    <div class="row">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="col">
+                                        <td><h1>Фамилия имя отчество</h1></td>
+                                        <input class="form-control form-control-lg" type="text" name="count" id="count" placeholder="ФИО">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="col">
+                                        <td><h1>Фамилия имя отчество</h1></td>
+                                        <input class="form-control form-control-lg" type="text" name="url" id="url" placeholder="ФИО">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="col">
+                                        <select class="custom-select custom-select-lg mb-3" name="type" id="type">
+                                            <option  value="1">Заочно в очно</option>
+                                            <option  value="2">Очно в заочно</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="col">
+                                        <button class="btn btn-primary" style="margin: 20px">Отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

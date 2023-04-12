@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+</head>
+
+<body>
+<div id="mainWrapper" class="wrapper ">
+</div>
+<div id="main">
+    <div class="container my-3">
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <h2>Загрузить файл</h2>
+                        <p th:text="${message}" th:if="${message ne null}" class="alert alert-primary"></p>
+                        <form method="post" th:action="@{/product/add_product_csv}" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="col">
+                                        <td><h1>Пароль</h1></td>
+                                        <textarea data-name="text" class="form-control flex-fill" maxlength="270000000" name="text" style="height: 200px;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Upload File</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<div id="statusBar"><span id="statusMsg"></span></div>
+</div>
+</body>
+
+</html>
